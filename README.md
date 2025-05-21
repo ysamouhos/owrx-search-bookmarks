@@ -6,7 +6,7 @@ You must enable "Allow users to change center frequency" and in case you have se
 
 
 # Installation
-1. Add the following line in your nginx site configuration (point it to whereever your bookmarks.json file is)
+1. Add the following line in your nginx site configuration (point it to wherever your bookmarks.json file is)
    location /bookmarks.json { alias /var/lib/openwebrx/bookmarks.json; }
 2. Download and add the js and css files in plugins/receiver folder under search_bookmarks folder.
 3. Edit init.js and add Plugins.load('search_bookmarks'); at the end of it.
