@@ -1,5 +1,5 @@
 # owrx-search-bookmarks
-Search all owrx bookmarks and click to tune. Jumping to tune based on "frequency_far_jump plugin by (LZ2DMV)
+Search all owrx bookmarks and click to tune. Jumping to tune based on "frequency_far_jump" plugin by (LZ2DMV)
 
 # Prerequisites
 You must enable "Allow users to change center frequency" and in case you have set a magic key, you will have to provide it with a '#key=[KEY]' at the end of the URL.
