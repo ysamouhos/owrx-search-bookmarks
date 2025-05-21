@@ -1,6 +1,6 @@
-// Init function of the plugin
-//
-Plugins.search_bookmarks.API_URL ??= `${window.location.origin}/antenna_switch`;
+// Seaarch Bookmarks UI plugin for OpenWebRX+
+// License: MIT
+// Switching frquency code is based on LZ2DMV "frequency_far_jump" plugin
 
 Plugins.search_bookmarks.init = function () {
     if (!Plugins.isLoaded('utils', 0.1)) {
