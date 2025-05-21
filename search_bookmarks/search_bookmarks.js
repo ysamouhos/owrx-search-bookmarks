@@ -186,7 +186,6 @@ Plugins.search_bookmarks.init = function () {
             
             // Click handler
             resultItem.addEventListener('click', () => {
-                //selectBookmark(bookmark);
 		handleBookmarkSelection(bookmark);
             });
             
@@ -219,7 +218,6 @@ Plugins.search_bookmarks.init = function () {
     function handleBookmarkSelection(bookmark) {
       var to_what = Math.round(bookmark.frequency);
       if (to_what > bandwidth / 2 || to_what < -bandwidth / 2) {
-        // to_what is an offset, so we need to add the current full frequency (center_freq) to it
         var f = to_what;
         var k = $('#openwebrx-panel-receiver').demodulatorPanel().getMagicKey();
 
@@ -233,8 +231,6 @@ Plugins.search_bookmarks.init = function () {
         // just use the original set_offset_frequency
         orig.apply(thisArg, args);
       }
-//	window.location.replace("/#freq="+bookmark.frequency+",mod="+bookmark.modulation+",key=sv1235swl-key");
-//        console.log('Selected bookmark:', window.location);
     }
 
     function clearSearchResults() {
